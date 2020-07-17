@@ -10,8 +10,8 @@ function feetToMile(feet){
     return mile;
 }
 
-var result = feetToMile(10000);
-console.log(result);
+var mile = feetToMile();
+console.log(mile);
 
                         
                              //   woodCalculator
@@ -44,14 +44,14 @@ function woodCalculator(chair, table, bed){
     var floor3;
     var floor4;
     
-   if (floor >=1 && floor<11 ){
+   if (floor >= 1 && floor < 11 ){
        var floor1 = floor * 15000;
        return floor1;
    }
 
-   else if(floor>10  && floor<=20){
-     floor1 = floor - 10;
-     floor2 = floor1 * 12000+150000;
+   else if(floor> 10  && floor <= 20){
+    var floor1 = floor - 10;
+        floor2 = floor1 * 12000 + 150000;
  
     
    return  floor2;
@@ -60,8 +60,8 @@ function woodCalculator(chair, table, bed){
   
   else if (floor>20){
 
-   var floor3 = floor-20;
-   floor4 = floor3 * 10000 + 270000;
+   var floor3 = floor - 20;
+       floor4 = floor3 * 10000 + 270000;
   
 
   return floor4;
